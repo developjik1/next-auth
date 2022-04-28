@@ -1,34 +1,74 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# 🔥 Next.js Next-Auth Practice
+<br/>
 
-## Getting Started
+## ✔ Next-Auth Practice 목록
+- CredentialsProvider 기반 email, password 로그인하기
+- 다른 여러 소셜기반 로그인 가능하게 하기
 
-First, run the development server:
+## 🚀 프로젝트 설치 및 실행
 
-```bash
-npm run dev
-# or
-yarn dev
+1. Git Clone
+
+```plaintext
+https://github.com/developjik1/nextjs-nextauth-practice.git
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+2. 프로젝트 패키지 설치
 
-You can start editing the page by modifying `pages/index.js`. The page auto-updates as you edit the file.
+```plaintext
+npm install
+```
 
-[API routes](https://nextjs.org/docs/api-routes/introduction) can be accessed on [http://localhost:3000/api/hello](http://localhost:3000/api/hello). This endpoint can be edited in `pages/api/hello.js`.
+3. 프로젝트 실행
 
-The `pages/api` directory is mapped to `/api/*`. Files in this directory are treated as [API routes](https://nextjs.org/docs/api-routes/introduction) instead of React pages.
+```plaintext
+npm start
+```
 
-## Learn More
+<br/>
 
-To learn more about Next.js, take a look at the following resources:
+## 🌲 프로젝트 구조
+```bash
+├── README.md
+├── common
+│   ├── const
+│   │   └── index.js
+│   ├── style
+│   │   └── index.js
+│   └── theme
+│       └── index.js
+├── components
+│   ├── Footer
+│   │   └── index.js
+│   └── Nav
+│       ├── NavLoginMenus.js
+│       ├── NavLogo.js
+│       ├── NavMenus.js
+│       └── index.js
+├── hooks
+│   └── useToggle.js
+├── jsconfig.json
+├── next.config.js
+├── package.json
+├── pages
+│   ├── _app.js
+│   ├── _document.js
+│   ├── about.js
+│   ├── api
+│   │   ├── auth
+│   │   │   └── [...nextauth].js
+│   │   └── hello.js
+│   ├── content.js
+│   ├── index.js
+│   ├── more.js
+│   └── signUp.js
+├── public
+│   └── favicon.ico
+└── yarn.lock
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+12 directories, 26 files
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
+```
+<br/>
 
-## Deploy on Vercel
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
