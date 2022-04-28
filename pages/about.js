@@ -1,13 +1,16 @@
+import React from 'react';
 import styled from '@emotion/styled';
 import { ComonC } from 'common/style';
 
-const HC = styled(ComonC)`
+const AC = styled(ComonC)`
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
 `;
 
-export default function Home() {
-  return <HC>Home</HC>;
-}
+const About = () => {
+  return <AC>about</AC>;
+};
+
+export default About;
