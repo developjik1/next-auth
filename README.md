@@ -16,13 +16,13 @@ https://github.com/developjik1/nextjs-nextauth-practice.git
 2. 프로젝트 패키지 설치
 
 ```plaintext
-npm install
+yarn install
 ```
 
 3. 프로젝트 실행
 
 ```plaintext
-npm start
+npm run dev
 ```
 
 <br/>
